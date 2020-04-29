@@ -69,7 +69,7 @@
 
 .navbt li a, .dropbt{
     color: black;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -82,16 +82,12 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1b8b8;
     min-width: 160px;
     z-index: 1;
-    
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
-    margin-top: 50px;
-    border: 1px solid rebeccapurple;
     text-align: left;
 
   }
@@ -101,5 +97,9 @@
     text-decoration: none;
     text-align:left;
     display: block;
+    background-color: white;
     
+  }
+  .hide{
+      visibility: hidden;
   }
