@@ -1,3 +1,8 @@
+body{
+    background-color: #F7F8FA;
+}
+
+
 /* <----------------------Blue Top----------------------------> */
 
 .top{
@@ -62,7 +67,7 @@
     margin-left: -7px;
     margin-right: -10px;
     font-family: calibri;
-    background-color: rgb(245, 245, 245);
+    background-color: #F7F8FA;
     padding: 0% 9% 0% 7%;
     display: flex;
     flex-direction: row;
@@ -149,14 +154,45 @@
 
 
   /* <---------------------------------Banner-------------------------------> */
- 
-
-
-.scroll{
-    height: 800px;
+ .maincontent{
+     margin-top: 480px;
+     height: 800px;
+  
+ }
+.news{
+    width: 90%;
+    padding: 5px;
+    background-color: #316dc3;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
 }
-/* .prev:hover, .next:hover{
-    background-color:rgba(255, 255, 255, 0.1) !important;
-    border-radius: 100px;
-    
-} */
+.lightgreen{
+    color: rgb(172, 255, 6);
+}
+.green{
+    color: #427900;
+}
+.blue{
+    color: #316dc3;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+.intropara{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    color: #666666;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: justify;
+
+}

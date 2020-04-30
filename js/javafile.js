@@ -23,6 +23,7 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-  // setTimeout(plusSlides,2000);
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  setTimeout(showSlides,4000);
 }
-
