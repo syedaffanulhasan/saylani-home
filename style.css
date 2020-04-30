@@ -12,12 +12,13 @@
     top: 0;
     right: 0;
     left: 0;
+    
 }
 
 
 .logoimg{
    width: 20px;
-   height: 20px;
+   /* height: 20px; */
    margin-left: 8px;
    margin-right: 8px;
 }
@@ -33,13 +34,13 @@
     cursor: pointer;
     background-color: #f5f5f5; 
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
   }
 
 
   .toptext{
       color: white;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: sans-serif;
       padding: 10px;
       padding-right: 45px;
       font-size: 15px;
@@ -48,18 +49,46 @@
   }
 
 
+
+
+
+
+
+
+
 /* <---------------------------------Navigation bar-----------------------------> */
 .nav{
-    margin-top: 200px;
-}
-.navimgdiv{
-    margin-top:50px ;
-    border: 1px solid red;
+    margin-top: 47px;
+    margin-left: -7px;
+    margin-right: -10px;
+    font-family: calibri;
+    background-color: rgb(245, 245, 245);
+    padding: 0% 9% 0% 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
+
+.navbt{
+    
+    
+    
+    padding : 8px 10px 20px 20px;
+
+
+}
 
 .navimg{
     width: 200px;
+    margin-top: 10px;
 }
 
  .navbt li{
@@ -70,20 +99,29 @@
 .navbt li a, .dropbt{
     color: black;
     text-align: left;
-    padding: 14px 16px;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 550;
     text-decoration: none;
+    border-radius: 20px;
 }
-.navbt li a:hover {
+.navbt li a:hover{
     background-color: #316dc3;
-    color: white;
+    color: white ;
 }
 
+.active {
+    background-color: #316dc3 !important;
+    color: white !important;
+}
 
 .dropdown-content {
     display: none;
     position: absolute;
     min-width: 160px;
-    z-index: 1;
+    z-index: 10;
+    
+    
   }
 
   .dropdown:hover .dropdown-content {
@@ -98,8 +136,27 @@
     text-align:left;
     display: block;
     background-color: white;
+    border-radius: 0% !important;
     
   }
   .hide{
       visibility: hidden;
+      height: 10px;
   }
+
+
+
+
+
+  /* <---------------------------------Banner-------------------------------> */
+ 
+
+
+.scroll{
+    height: 800px;
+}
+/* .prev:hover, .next:hover{
+    background-color:rgba(255, 255, 255, 0.1) !important;
+    border-radius: 100px;
+    
+} */
