@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gallery.css">
+
+
+<body>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="images/Gallery/food.jpg" style="width:100%" onclick="openModal();GcurrentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Gallery/hazrat.jpg" style="width:100%" onclick="openModal();GcurrentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Gallery/hazrat2.jpg" style="width:100%" onclick="openModal();GcurrentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Gallery/rashan2 (1).jpg" style="width:100%" onclick="openModal();GcurrentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Gallery/hazrat.jpg" style="width:100%" onclick="openModal();GcurrentSlide(5)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="GModal" class="modalG">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modalG-content">
+
+    <div class="Gallery-Slides">
+      <div class="numbertext">1 / 5</div>
+      <img src="images/Gallery/food.jpg" style="width:100%">
+    </div>
+
+    <div class="Gallery-Slides">
+      <div class="numbertext">2 / 5</div>
+      <img src="images/Gallery/hazrat.jpg" style="width:100%">
+    </div>
+
+    <div class="Gallery-Slides">
+      <div class="numbertext">3 / 5</div>
+      <img src="images/Gallery/hazrat2.jpg" style="width:100%">
+    </div>
+    
+    <div class="Gallery-Slides">
+      <div class="numbertext">4 / 5</div>
+      <img src="images/Gallery/rashan2 (1).jpg" style="width:100%">
+    </div>
+
+    <div class="Gallery-Slides">
+      <div class="numbertext">5 / 5</div>
+      <img src="images/Gallery/hazrat.jpg" style="width:100%">
+    </div>
+    
+    <a class="Gprev" onclick="GplusSlides(-1)">&#10094;</a>
+    <a class="Gnext" onclick="GplusSlides(1)">&#10095;</a>
+
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("GModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("GModal").style.display = "none";
+}
+
+var GslideIndex = 1;
+GshowSlides(GslideIndex);
+
+function GplusSlides(m) {
+  GshowSlides(GslideIndex += m);
+}
+
+function GcurrentSlide(m) {
+  GshowSlides(GslideIndex = m);
+}
+
+function GshowSlides(m) {
+  var x;
+  var slidesG = document.getElementsByClassName("Gallery-Slides");
+  // var dots = document.getElementsByClassName("demo");
+  // var captionText = document.getElementById("caption");
+  if (m > slidesG.length) {GslideIndex = 1}
+  if (m < 1) {GslideIndex = slidesG.length}
+  for (x = 0; x < slidesG.length; x++) {
+      slidesG[x].style.display = "none";
+  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slidesG[GslideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
